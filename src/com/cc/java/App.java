@@ -1,8 +1,20 @@
 package com.cc.java;
 public class App {
     public static void main(String[] args) {
-      // to do
-    
+      
+    HoneyBee worker = new Worker();
+    HoneyBee queen = new Queen();
+    HoneyBee drone = new Drone();
+
+    ausgabe(worker.doYourJob());
+    ausgabe(queen.doYourJob());
+    ausgabe(drone.doYourJob());
+
+    ausgabe("------------------");
+
+    ausgabe(worker.fly());
+    ausgabe(queen.fly());
+    ausgabe(drone.fly());
 
     }
 
